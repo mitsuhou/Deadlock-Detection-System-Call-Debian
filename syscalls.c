@@ -31,7 +31,7 @@ SYSCALL_DEFINE1(register_resource, int, resource_id)
 
     mutex_unlock(&resource_mutex);
     return 0;
-
+}
 SYSCALL_DEFINE1(request_resource, int, resource_id)
 {
     struct resource_node *res = NULL, *tmp;
